@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { notFound } from 'next/navigation'
 import ToolGrid from '@/components/ToolGrid'
+import AdSenseAd from '@/components/AdSenseAd'
 import { getCategoryBySlug, getToolsByCategory } from '@/data/tools'
 
 export default function CategoryPage({ params }: { params: { slug: string } }) {
@@ -32,8 +33,8 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Ad Placeholder */}
-        <div className="max-w-4xl mx-auto mb-12 p-4 glass rounded-xl text-center text-gray-500">
-          [AdSense Ad Placeholder - 728x90]
+        <div className="max-w-4xl mx-auto mb-12">
+          <AdSenseAd />
         </div>
 
         {/* Tools Grid */}
@@ -43,8 +44,8 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Ad Placeholder */}
-        <div className="max-w-4xl mx-auto mt-12 p-4 glass rounded-xl text-center text-gray-500">
-          [AdSense Ad Placeholder - 728x90]
+        <div className="max-w-4xl mx-auto mt-12">
+          <AdSenseAd />
         </div>
       </motion.div>
     </div>

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 import Link from 'next/link'
+import AdSenseAd from '@/components/AdSenseAd'
 import { tools } from '@/data/tools'
 
 interface ToolLayoutProps {
@@ -29,8 +30,8 @@ export default function ToolLayout({ title, description, children, faq, currentT
         <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">{description}</p>
 
         {/* Ad Placeholder */}
-        <div className="mb-8 p-4 glass rounded-xl text-center text-gray-500">
-          [AdSense Ad Placeholder - 728x90]
+        <div className="mb-8">
+          <AdSenseAd />
         </div>
 
         {/* Tool Interface */}
@@ -79,8 +80,8 @@ export default function ToolLayout({ title, description, children, faq, currentT
         )}
 
         {/* Ad Placeholder */}
-        <div className="mt-8 p-4 glass rounded-xl text-center text-gray-500">
-          [AdSense Ad Placeholder - 728x90]
+        <div className="mt-8">
+          <AdSenseAd />
         </div>
       </motion.div>
     </div>

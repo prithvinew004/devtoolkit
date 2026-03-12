@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import CategoryCard from '@/components/CategoryCard'
 import SearchBar from '@/components/SearchBar'
 import ToolGrid from '@/components/ToolGrid'
+import AdSenseAd from '@/components/AdSenseAd'
 import { categories, tools, getPopularTools } from '@/data/tools'
 
 export default function Home() {
@@ -44,8 +45,8 @@ export default function Home() {
       </motion.div>
 
       {/* Ad Placeholder */}
-      <div className="max-w-4xl mx-auto mb-12 p-4 glass rounded-xl text-center text-gray-500">
-        [AdSense Ad Placeholder - 728x90]
+      <div className="max-w-4xl mx-auto mb-12">
+        <AdSenseAd />
       </div>
 
       {search ? (
@@ -101,8 +102,8 @@ export default function Home() {
       )}
 
       {/* Ad Placeholder */}
-      <div className="max-w-4xl mx-auto mt-12 p-4 glass rounded-xl text-center text-gray-500">
-        [AdSense Ad Placeholder - 728x90]
+      <div className="max-w-4xl mx-auto mt-12">
+        <AdSenseAd />
       </div>
     </div>
   )
