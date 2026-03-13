@@ -5,7 +5,6 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
-import GoogleAdsense from '@/components/GoogleAdsense'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +23,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <GoogleAnalytics />
-        <GoogleAdsense />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7690377849232326"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
