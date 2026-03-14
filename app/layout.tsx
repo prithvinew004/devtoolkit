@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: 'DevToolkit - Free Developer Tools & Utilities',
   description: 'Collection of free online developer tools including JSON formatter, password generator, UUID generator, and more.',
   keywords: 'developer tools, online tools, JSON formatter, password generator, UUID generator',
+  verification: {
+    google: '7kfJ94sEc6YWV6usAFjVjrLwZS1017Lk6MDVZ3xReE0',
+  },
 }
 
 export default function RootLayout({
